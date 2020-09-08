@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		73E33A3A2506154B0010BE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E33A382506154B0010BE91 /* LaunchScreen.storyboard */; };
 		73E33A452506154B0010BE91 /* simplePhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E33A442506154B0010BE91 /* simplePhoneTests.swift */; };
 		73E33A502506154C0010BE91 /* simplePhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E33A4F2506154C0010BE91 /* simplePhoneUITests.swift */; };
+		73E33A9A25079F3D0010BE91 /* addAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E33A9925079F3D0010BE91 /* addAddress.swift */; };
+		73E33A9C25079F7C0010BE91 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E33A9B25079F7C0010BE91 /* signup.swift */; };
+		73E33A9E25079F9D0010BE91 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E33A9D25079F9D0010BE91 /* login.swift */; };
 		CAE36C210649040BCC341585 /* Pods_simplePhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9C80589CFB22EA81F19E6 /* Pods_simplePhone.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		73E33A4B2506154C0010BE91 /* simplePhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplePhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E33A4F2506154C0010BE91 /* simplePhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplePhoneUITests.swift; sourceTree = "<group>"; };
 		73E33A512506154C0010BE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E33A9925079F3D0010BE91 /* addAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addAddress.swift; sourceTree = "<group>"; };
+		73E33A9B25079F7C0010BE91 /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup.swift; sourceTree = "<group>"; };
+		73E33A9D25079F9D0010BE91 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		8AD9C80589CFB22EA81F19E6 /* Pods_simplePhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simplePhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12C0A9F4FADA7A7EFE6392E /* Pods-simplePhone-simplePhoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simplePhone-simplePhoneUITests.release.xcconfig"; path = "Target Support Files/Pods-simplePhone-simplePhoneUITests/Pods-simplePhone-simplePhoneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE0AFEB0F4442054DAE49ADB /* Pods-simplePhone-simplePhoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simplePhone-simplePhoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-simplePhone-simplePhoneUITests/Pods-simplePhone-simplePhoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +107,6 @@
 				FBA97F84719E8EC76A9E1EC2 /* Pods-simplePhoneTests.debug.xcconfig */,
 				F3ED6A3382A71F427D4EB472 /* Pods-simplePhoneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +139,9 @@
 				73E33A2F250615410010BE91 /* SceneDelegate.swift */,
 				73E33A31250615410010BE91 /* ViewController.swift */,
 				73E33A33250615410010BE91 /* Main.storyboard */,
+				73E33A9D25079F9D0010BE91 /* login.swift */,
+				73E33A9B25079F7C0010BE91 /* signup.swift */,
+				73E33A9925079F3D0010BE91 /* addAddress.swift */,
 				73E33A362506154B0010BE91 /* Assets.xcassets */,
 				73E33A382506154B0010BE91 /* LaunchScreen.storyboard */,
 				73E33A3B2506154B0010BE91 /* Info.plist */,
@@ -409,7 +417,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E33A32250615410010BE91 /* ViewController.swift in Sources */,
+				73E33A9E25079F9D0010BE91 /* login.swift in Sources */,
 				73E33A2E250615410010BE91 /* AppDelegate.swift in Sources */,
+				73E33A9C25079F7C0010BE91 /* signup.swift in Sources */,
+				73E33A9A25079F3D0010BE91 /* addAddress.swift in Sources */,
 				73E33A30250615410010BE91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
