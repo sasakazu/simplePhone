@@ -1,0 +1,6 @@
+framework module Pods_simplePhone_simplePhoneUITests {
+  umbrella header "Pods-simplePhone-simplePhoneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
