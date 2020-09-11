@@ -8,7 +8,8 @@ target 'simplePhone' do
   # Pods for simplePhone
   
   pod 'Firebase'
-
+  pod 'Firebase/Auth'
+  
   target 'simplePhoneTests' do
     inherit! :search_paths
     # Pods for testing

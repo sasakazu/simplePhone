@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class login: UIViewController {
-
+    
+    
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passTF: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,5 +24,18 @@ class login: UIViewController {
     
 
  
-
+    @IBAction func login(_ sender: Any) {
+    
+//        ユーザーをログイン
+        Auth.auth().signIn(withEmail: emailTF.text!, password: passTF.text!) { [weak self] authResult, error in
+          guard let strongSelf = self else { return }
+          // ...
+        }
+        
+        print("login success!")
+        
+        
+    }
+ 
+    
 }
