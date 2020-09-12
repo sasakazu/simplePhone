@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class addAddress: UIViewController {
@@ -23,6 +24,22 @@ class addAddress: UIViewController {
    
     
     @IBAction func save(_ sender: Any) {
+        
+        let db = Firestore.firestore()
+        
+        let docData:[String:Any] = [
+            "name": "sasa",
+            "phonenumber": 0909090,
+            "profileimage": "test"
+        ]
+
+        db.collection("data").document("one").setData(docData) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
         
     }
     

@@ -8,6 +8,7 @@ target 'simplePhone' do
   # Pods for simplePhone
   
   pod 'Firebase'
+  pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   
   target 'simplePhoneTests' do
