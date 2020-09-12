@@ -25,15 +25,21 @@ class addAddress: UIViewController {
     
     @IBAction func save(_ sender: Any) {
         
+//        firebase初期化
         let db = Firestore.firestore()
         
+//        ログインしているユーザーの取得
+        let current = Auth.auth().currentUser
+        
+//        データベースに格納するもの
         let docData:[String:Any] = [
-            "name": "sasa",
-            "phonenumber": 0909090,
+            "name": name.text!,
+            "phonenumber": phoneNumber.text!,
             "profileimage": "test"
         ]
 
-        db.collection("data").document("one").setData(docData) { err in
+//        firestoreにデータを追加する
+        db.collection(current!.uid).addDocument(data: docData) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {
@@ -44,7 +50,7 @@ class addAddress: UIViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
-        
+//        戻るボタン
         dismiss(animated: true, completion: nil)
     }
     
