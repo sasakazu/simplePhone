@@ -190,8 +190,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="アドレス追加" id="Xp9-oH-qt1">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="h1s-0k-TcR"/>
-                                        <barButtonItem key="rightBarButtonItem" title="保存" id="dXA-JS-TgK"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="h1s-0k-TcR">
+                                            <connections>
+                                                <action selector="cancel:" destination="gUv-K7-fpi" id="1AZ-De-2Vn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="保存" id="dXA-JS-TgK">
+                                            <connections>
+                                                <action selector="save:" destination="gUv-K7-fpi" id="sNZ-K5-nwS"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -216,6 +224,11 @@
                         <viewLayoutGuide key="safeArea" id="h6p-P4-CR3"/>
                     </view>
                     <navigationItem key="navigationItem" id="jnW-Fv-Dbm"/>
+                    <connections>
+                        <outlet property="name" destination="gP6-d2-KFP" id="vSv-dq-RLj"/>
+                        <outlet property="phoneNumber" destination="1sZ-jR-Boq" id="Lde-6V-y6Q"/>
+                        <outlet property="profileImage" destination="GTK-ll-KEe" id="C3D-L6-2rN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2WL-y6-Tsh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
