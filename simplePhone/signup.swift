@@ -22,19 +22,30 @@ class signup: UIViewController {
     }
   
     
-//  会員登録する
+//  会員登録
     @IBAction func signup(_ sender: Any) {
         
         Auth.auth().createUser(withEmail: emailTF.text!, password: passTF.text!) { authResult, error in
-          
-            
             
         }
-        
         print("signup success!")
     
-    
     }
+    
+//    logout
+    @IBAction func logout(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        
+        }
+    }
+    
+    
     
 
 }
