@@ -31,10 +31,14 @@ class addAddress: UIViewController {
 //        ログインしているユーザーの取得
         let current = Auth.auth().currentUser
         
-//        データベースに格納するもの
+        // phonenumberをIntに変更する
+        let str1:String = phoneNumber.text!
+        let number:Int = Int(str1)!
+        
+//        データベースに格納データ
         let docData:[String:Any] = [
             "name": name.text!,
-            "phonenumber": phoneNumber.text!,
+            "phonenumber": number,
             "profileimage": "test"
         ]
 
@@ -49,8 +53,9 @@ class addAddress: UIViewController {
         
     }
     
+    
     @IBAction func cancel(_ sender: Any) {
-//        戻るボタン
+//        戻るボタンも実装
         dismiss(animated: true, completion: nil)
     }
     
