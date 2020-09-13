@@ -19,7 +19,26 @@ class addAddress: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        イメージ画像がなければデフォルトで表示させる
+        if profileImage.image == nil {
+                   let image1 = UIImage(named: "images")
+                   profileImage.image = image1
+        }
 
+        // 影の方向
+        profileImage.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        // 影の色
+        profileImage.layer.shadowColor = UIColor.black.cgColor
+        // 影の濃さ
+        profileImage.layer.shadowOpacity = 0.6
+        // 影をぼかし
+        profileImage.layer.shadowRadius = 4
+        
+//      画面に表示する
+        view.addSubview(profileImage)
+
+        
     }
    
     
